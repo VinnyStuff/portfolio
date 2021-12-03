@@ -28,10 +28,13 @@
 
 .projectTitle{
     margin-top: 10pt;
+    font-size: 20pt;
 }
 
 .projectDescription{
     margin-top: -6pt;
+    text-align: justify;
+    font-size: 13pt;
 }
 
 .projectTechnologies{
@@ -42,29 +45,29 @@
 
 
 
-.categories{
+.categories, .availableAt{
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 13pt;
     border: none;
-    padding-left: 6pt;
-    padding-right: 6pt;
-    padding-top: 3pt;
-    padding-bottom: 3pt;
+    padding-left: 9pt;
+    padding-right: 9pt;
+    padding-top: 6pt;
+    padding-bottom: 6pt;
     border-radius: 6pt;
     transition: .2s ease;
 }
 
 .categories:hover{
-    transform: scale(1.18);
-    -webkit-transfoorm: scale(1.18);
-    -ms-transform: scale(1.18);
+    transform: scale(1.15);
+    -webkit-transfoorm: scale(1.15);
+    -ms-transform: scale(1.15);
 }
 .categories:active{
     transform: scale(1);
     -webkit-transfoorm: scale(1);
     -ms-transform: scale(1);
 }
-
+  
 .cSharp{
     background-color: #822C98;
     color: white;
@@ -74,4 +77,19 @@
 .unity{
     background-color: #272626;
     color: white;
+}
+
+.available{
+    float: right;
+    margin-right: 16pt;
+}
+
+.availableAt{
+    background-color: transparent;
+    padding-right: 6pt;
+    padding-bottom: 5pt;
+}
+
+.googlePlay{
+    background-color: transparent;
 }
