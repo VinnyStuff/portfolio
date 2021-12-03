@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+.project{
+    font-family: 'DM Sans', sans-serif;
+    width: 95%;
+    margin: 0 auto;
+    background-color: tomato;
+}
+
+
+.projectTitle, .projectDescription{
+    padding-left: 16pt;
+    padding-right: 16pt;
+}
+
+.projectTitle{
+    padding-top: 12pt;
+}
+
+.projectDescription{
+    margin-top: -6pt;
+    padding-bottom: 12pt;
+}
+
+
+.technologiesTitle, .availableInTitle{
+    margin-top: -4pt;
+    padding-left: 16pt;
+    font-size: 13pt;
+}
+
+.projectTechnologies, .projectAvailableIn{
+    width: 50%;
+    margin-top: -12pt;
+}
+.projectTechnologies{
+    float: left;
+    padding-left: 16pt;
+    margin-top: -6pt;
+    margin-top: -12pt;
+}
+.projectAvailableIn{
+    float: right;
+}
