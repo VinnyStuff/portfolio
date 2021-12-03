@@ -4,7 +4,9 @@
     font-family: 'DM Sans', sans-serif;
     width: 95%;
     margin: 0 auto;
-    background-color: tomato;
+    padding-bottom: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
 
@@ -19,26 +21,53 @@
 
 .projectDescription{
     margin-top: -6pt;
-    padding-bottom: 12pt;
 }
 
-
-.technologiesTitle, .availableInTitle{
-    margin-top: -4pt;
-    padding-left: 16pt;
-    font-size: 13pt;
-}
-
-.projectTechnologies, .projectAvailableIn{
-    width: 50%;
-    margin-top: -12pt;
-}
 .projectTechnologies{
-    float: left;
     padding-left: 16pt;
-    margin-top: -6pt;
-    margin-top: -12pt;
+    margin-top: -2pt;
 }
-.projectAvailableIn{
+
+
+
+
+.categories{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9em;
+    border: none;
+    padding-left: 6pt;
+    padding-right: 6pt;
+    padding-top: 3pt;
+    padding-bottom: 3pt;
+    border-radius: 6pt;
+    transition: .2s ease;
+}
+
+.categories:hover{
+    transform: scale(1.18);
+    -webkit-transfoorm: scale(1.18);
+    -ms-transform: scale(1.18);
+}
+.categories:active{
+    transform: scale(1);
+    -webkit-transfoorm: scale(1);
+    -ms-transform: scale(1);
+}
+
+.download{
     float: right;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    border-radius: 6pt;
+}
+
+.cSharp{
+    background-color: #822C98;
+    color: white;
+    margin-left: 3pt;
+}
+
+.unity{
+    background-color: #272626;
+    color: white;
 }
