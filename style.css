@@ -45,7 +45,7 @@
 
 
 
-.categories, .availableAt{
+.categories, .download{
     font-family: 'DM Sans', sans-serif;
     font-size: 13pt;
     border: none;
@@ -63,6 +63,7 @@
     -ms-transform: scale(1.15);
 }
 .categories:active{
+    transition: .1s ease;
     transform: scale(1);
     -webkit-transfoorm: scale(1);
     -ms-transform: scale(1);
@@ -83,13 +84,24 @@
     float: right;
     margin-right: 16pt;
 }
-
-.availableAt{
+.download{
+    font-size: 0.9em;
+    font-weight: bold;
     background-color: transparent;
-    padding-right: 6pt;
-    padding-bottom: 5pt;
+    border-color: #187bcd;
+    color: #187bcd;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.75em;
+    transition: .2s ease;
 }
-
-.googlePlay{
-    background-color: transparent;
+.download:hover{
+    background-color: #187bcd;
+    color: white;
+}
+.download:active{
+    transition: .1s ease;
+    transform: scale(0.9);
+    -webkit-transfoorm: scale(0.9);
+    -ms-transform: scale(0.9);
 }
