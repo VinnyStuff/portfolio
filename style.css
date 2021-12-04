@@ -35,6 +35,8 @@
     margin-top: -6pt;
     text-align: justify;
     font-size: 13pt;
+    margin-bottom: -1pt;
+    padding-bottom: 8pt;
 }
 
 .projectTechnologies{
@@ -56,12 +58,13 @@
     border-radius: 6pt;
     transition: .2s ease;
     margin-left: 3pt;
+    margin-top: 5pt;
 }
 
 .categories:hover{
-    transform: scale(1.15);
-    -webkit-transfoorm: scale(1.15);
-    -ms-transform: scale(1.15);
+    transform: scale(1.1);
+    -webkit-transfoorm: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 .categories:active{
     transition: .1s ease;
