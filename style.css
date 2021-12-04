@@ -55,6 +55,7 @@
     padding-bottom: 6pt;
     border-radius: 6pt;
     transition: .2s ease;
+    margin-left: 3pt;
 }
 
 .categories:hover{
@@ -72,11 +73,21 @@
 .cSharp{
     background-color: #822C98;
     color: white;
-    margin-left: 3pt;
 }
-
 .unity{
     background-color: #272626;
+    color: white;
+}
+.javascript{
+    background-color: #F0BE25;
+    color: white;
+}
+.html{
+    background-color: #FF4C15;
+    color: white;
+}
+.css{
+    background-color: #0076BE;
     color: white;
 }
 
@@ -93,7 +104,8 @@
     border-style: solid;
     border-width: 2px;
     border-radius: 0.75em;
-    transition: .2s ease;
+    transition: .1s ease;
+    padding: 6pt 18pt;
 }
 .download:hover{
     background-color: #187bcd;
