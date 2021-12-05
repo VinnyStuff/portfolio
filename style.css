@@ -49,6 +49,9 @@
     padding: 3pt 3pt;
     margin-right: 2pt;
 }
+.carouselNavigationButtonActive{
+    background-color: #0095F6;
+}
 
 .projectTitle, .projectDescription{
     padding-left: 16pt;
