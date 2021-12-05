@@ -23,17 +23,31 @@
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
-.imageArrow{
+.carouselButtonInImage{
     position: absolute;
     transform: translate(-50%,-50%);
     margin-right: -50%;
-    top: 50%;
+    top: 45%;
 }
-.imageRightArrow{
+.carouselNext{
     left: 95%;
 }
-.imageLeftArrow{
+.carouselPrev{
     left: 5%;
+}
+.carousel{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-right: -50%;
+    top: 92%;
+    left: 50%;
+}
+.carouselNavigationButton{
+    background-color: #A8A8A8;
+    border-radius: 16pt;
+    border: none;
+    padding: 3pt 3pt;
+    margin-right: 2pt;
 }
 
 .projectTitle, .projectDescription{
