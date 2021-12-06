@@ -1,11 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+  
 .body{
     color: #F3F3F3;
+    font-family: 'DM Sans', sans-serif;
 }
 
+#introduction{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2.5em;
+    margin-top: 15em;
+}
+#salutation{
+    font-size: 1.2em;
+    margin-bottom: -1.5em;
+}
+#myName{
+    font-size: 3em;
+}
+#middleName{
+    color: green;
+}
+#fastIntroduction{
+    font-size: 1.2em;
+    margin-top: -1em;
+}
+
+
+
+
+
+
+
+
+
+
+
 .project{
-    font-family: 'DM Sans', sans-serif;
     width: 95%;
     margin: 0 auto;
     padding-bottom: 1em;
@@ -73,7 +113,6 @@
 
 
 .categories{
-    font-family: 'DM Sans', sans-serif;
     font-size: 13pt;
     border: none;
     padding-left: 9pt;
