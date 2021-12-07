@@ -16,7 +16,7 @@ html, body {
 
 #tabsBar{
     text-align: right;
-    padding: 15px 0px;
+    padding: 20px 0px;
     width: 80%;
 }
 #tabsBar > button{
@@ -27,7 +27,6 @@ html, body {
     font-size: 1.2rem;
     margin-left: 0.5em;
     padding: 3pt 9pt;
-    border-radius: 6pt;
     cursor: pointer;
     transition: 200ms ease;
     font-weight: 400;
@@ -39,11 +38,9 @@ html, body {
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-
-    position: relative;
 }
 #tabsBar > button:hover{
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 #tabsBar > button:active{
     transform: scale(0.9);
