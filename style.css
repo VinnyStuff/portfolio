@@ -149,6 +149,11 @@ html, body {
     #tabsBar{
         text-align: right;
     }
+    #tabsBar > button{
+        font-size: 1rem;
+        padding: 0px 0px;
+        margin-right: 2rem;
+    }
 }
 @media (max-width: 480px) {
     #salutation{
@@ -157,6 +162,15 @@ html, body {
     #myName{
         font-size: clamp(3rem, 16vw, 5rem);
     }
+    #tabsBar{
+        text-align: center;
+    }
+    #tabsBar > button{
+        padding: 0px 0.6rem;
+        margin-right: 0px;
+    }
+}
+@media (max-height: 630px), (max-width: 320px){
     #tabsBar{
         display: none;
     }
