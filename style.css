@@ -15,18 +15,17 @@ html, body {
 
 
 #tabsBar{
-    text-align: right;
+    text-align: center;
     padding: 20px 0px;
-    width: 80%;
+    width: 100%;
 }
 #tabsBar > button{
     border: none;
     background-color: transparent;
     font-weight: 500;
     display: inline;
-    font-size: 1.2rem;
-    margin-left: 0.5em;
-    padding: 3pt 9pt;
+    font-size: 1.1rem;
+    padding: 0px 1.5rem;
     cursor: pointer;
     transition: 200ms ease;
     font-weight: 400;
@@ -45,9 +44,7 @@ html, body {
 #tabsBar > button:active{
     transform: scale(0.9);
 }
-@media (max-width: 650px) {
-    
-}
+
 
 
 
@@ -59,7 +56,7 @@ html, body {
 #homePage{
     position: absolute;
     top: 48%;
-    left: 40%;
+    left: 35%;
     transform: translate(-50%, -50%);
     padding: 2rem;
 }
@@ -121,7 +118,6 @@ html, body {
         position: absolute;
         top: 75%;
         left: 50%;
-        margin-right: -50%;
         transform: translate(-50%, -50%);
     }
     #myName{
@@ -151,7 +147,7 @@ html, body {
         text-align: center;
     }
     #tabsBar{
-        display: none;
+        text-align: right;
     }
 }
 @media (max-width: 480px) {
@@ -160,6 +156,9 @@ html, body {
     }
     #myName{
         font-size: clamp(3rem, 16vw, 5rem);
+    }
+    #tabsBar{
+        display: none;
     }
 }
 
