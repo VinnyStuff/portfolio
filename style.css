@@ -32,15 +32,20 @@ html, body {
     transition: 200ms ease;
     font-weight: 400;
 
-    
+    background-image: radial-gradient(circle, rgba(253,0,84,1) 0%, rgba(168,0,56,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    position: relative;
 }
 #tabsBar > button:hover{
-    background-color: #01A5B1;
-    color: white;
+    transform: scale(1.2);
 }
 #tabsBar > button:active{
-    background-color: #01A5B1;
-    color: white;
     transform: scale(0.9);
 }
 @media (max-width: 650px) {
