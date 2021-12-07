@@ -14,28 +14,59 @@ html, body {
     font-family: 'DM Sans', sans-serif;
 }
 
+
 #introduction{
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2.5em;
-    margin-top: 15em;
 }
 #salutation{
-    font-size: 1.2em;
-    margin-bottom: -1.5em;
+    font-size: 1.33em;
 }
 #myName{
-    font-size: 3em;
+    font-size: clamp(2.5em, 8vw, 4em);
 }
 #middleName{
     color: green;
 }
 #fastIntroduction{
     font-size: 1.2em;
-    margin-top: -1em;
+    width: 31em;
 }
+.socialMedia{
 
+}
+.linkedin{
 
+}
+.github > img{
+    background-color: purple;
+    padding: 0.2em;
+    border-radius: 1em;
+    max-width: 5em;
+    height: 1.8em;
+}
+.github{
+    display: inline-block;
+    position: relative;
+}
+.github > p{
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    color: black;
+    visibility: visible;
+    opacity: 0;
+}
+.github:hover > img{
+    transition: 800ms ease;
+    padding-right: 5em;
+}
+.github:hover > p{
+    transition: 1s ease;
+    transition-delay: 250ms;
+    opacity: 100;
+    visibility: visible;
+}
 
 
 
