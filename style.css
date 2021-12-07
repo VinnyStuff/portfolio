@@ -58,7 +58,7 @@ html, body {
     top: 48%;
     left: 35%;
     transform: translate(-50%, -50%);
-    padding: 2rem;
+    padding: 0rem 2rem;
 }
 #salutation{
     margin: 0 auto;
@@ -146,9 +146,8 @@ html, body {
     #salutation{
         text-align: center;
     }
-    #tabsBar > button{
-        font-size: 1rem;
-        padding: 0px 0.65rem;
+    #tabsBar{
+        display: none;
     }
 }
 @media (max-width: 480px) {
@@ -157,18 +156,6 @@ html, body {
     }
     #myName{
         font-size: clamp(3rem, 16vw, 5rem);
-    }
-    #tabsBar{
-        text-align: center;
-        padding: 35px 0px;
-    }
-    #tabsBar > button{
-        padding: 0px 0.6rem;
-    }
-}
-@media (max-height: 630px), (max-width: 320px){
-    #tabsBar{
-        display: none;
     }
 }
 
