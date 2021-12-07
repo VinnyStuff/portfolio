@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 * {
     font-family: 'DM Sans', sans-serif;
 }
@@ -15,63 +14,97 @@ html, body {
 }
 
 
-#introduction{
+#tabsBar{
+    text-align: right;
+    padding: 15px 0px;
+    width: 80%;
+}
+#tabsBar > button{
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    display: inline;
+    font-size: 1.2rem;
+    margin-left: 0.5em;
+    padding: 3pt 9pt;
+    border-radius: 6pt;
+    cursor: pointer;
+    transition: 200ms ease;
+    font-weight: 400;
+
+    
+}
+#tabsBar > button:hover{
+    background-color: #01A5B1;
+    color: white;
+}
+#tabsBar > button:active{
+    background-color: #01A5B1;
+    color: white;
+    transform: scale(0.9);
+}
+@media (max-width: 650px) {
+    #tabsBar{
+        visibility: hidden;
+    }
+}
+
+
+
+.home{
+    min-height: 100vh;
+    background-color: #FBF9FA;
+}
+#homePage{
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 }
 #salutation{
-    font-size: 1.33em;
+    margin: 0 auto;
+    font-size: 1.33rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    color: #3E3636;
 }
 #myName{
-    font-size: clamp(2.5em, 8vw, 4em);
+    margin: 0 auto;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 400;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    color: #3E3636;
 }
 #middleName{
-    color: green;
+    font-weight: bold;
+    background-color:  rgb(253,0,84);
+  
+    background-image: radial-gradient(circle, rgba(253,0,84,1) 0%, rgba(168,0,56,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 #fastIntroduction{
-    font-size: 1.2em;
-    width: 31em;
+    font-size: 1.1rem;
+    width: 42rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    color: #3E3636;
 }
-.socialMedia{
-
+#technologiesLearning{
+    margin-top: -0.5rem;
 }
-.linkedin{
-
+#homePage > div > button{
+    color: #FBF9FA;
+    background: rgb(253,0,84);
+    background: linear-gradient(90deg, rgba(253,0,84,1) 0%, rgba(215,35,35,1) 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-.github > img{
-    background-color: purple;
-    padding: 0.2em;
-    border-radius: 1em;
-    max-width: 5em;
-    height: 1.8em;
-}
-.github{
-    display: inline-block;
-    position: relative;
-}
-.github > p{
-    position: absolute;
-    top: 5%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    color: black;
-    visibility: visible;
-    opacity: 0;
-}
-.github:hover > img{
-    transition: 800ms ease;
-    padding-right: 5em;
-}
-.github:hover > p{
-    transition: 1s ease;
-    transition-delay: 250ms;
-    opacity: 100;
-    visibility: visible;
-}
-
-
-
-
-
 
 
 
@@ -155,6 +188,8 @@ html, body {
     margin-right: 3pt;
     margin-top: 5pt;
     cursor: pointer;
+
+    
 }
 
 .categories:hover{
@@ -178,7 +213,7 @@ html, body {
     color: white;
 }
 .javascript{
-    background-color: #F0BE25;
+    background-color: #F7E018;
     color: white;
 }
 .html{
@@ -187,5 +222,9 @@ html, body {
 }
 .css{
     background-color: #0076BE;
+    color: white;
+}
+.react{
+    background-color: #61DBFB;
     color: white;
 }
