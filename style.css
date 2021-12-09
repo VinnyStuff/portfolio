@@ -57,9 +57,8 @@ html, body {
     min-height: 100vh;
     background-color: #FBF9FA;
     position: relative;
-    /*-webkit-box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08); 
-    box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);*/
-    border-bottom: 1px solid #000;
+    webkit-box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08); 
+    box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);
 }
 #homePage{
     position: absolute;
