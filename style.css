@@ -302,6 +302,7 @@ html, body {
 .aboutMe{
     background-color: #FBF9FA;
     position: relative;
+    box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);
 }
 #aboutMeTittle{
     display: inline-block;
@@ -407,5 +408,5 @@ html, body {
 #projects{
     background-color: #FBF9FA;
     min-height: 100vh;
-    background-color: RGBA(62,54,54,0.33);
+    background-color: #FBF9FA;
 }
