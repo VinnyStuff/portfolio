@@ -6,10 +6,10 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
+    background-color: #FBF9FA;
 }
   
 .body{
-    color: #F3F3F3;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -311,13 +311,15 @@ html, body {
 
 
 .aboutMe{
-    background-color: #FBF9FA;
+    background-color: #F9F7F8;
     position: relative;
     /*box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);*/
     padding-bottom: 3rem;
     padding-top: 3rem;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    -webkit-box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.13); 
+    box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.13);
 }
 #pageTittle{
     display: inline-block;
@@ -343,9 +345,9 @@ html, body {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 8px solid white;
-    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.25); 
-    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.25);
+    border: 8px solid #FBF9FA;
+    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15); 
+box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15);
 }
 
 #aboutMeText{
@@ -395,6 +397,12 @@ html, body {
         padding: 0rem 1rem;
     }  
 }
+@media (max-width: 1020px) {
+    .aboutMe{
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+}
 @media (max-width: 970px) {
     #aboutMePage{
         display: inline;
@@ -411,7 +419,6 @@ html, body {
         margin-bottom: 3rem;
     }
     .pageTittle{
-        font-size: 9vw;
         text-align: center;  
         text-shadow: 2px 2px 6px rgba(0,0,0,0.22);
         margin-bottom: 1rem;
@@ -425,6 +432,10 @@ html, body {
     #aboutMePage > h1{
         display: block;
     }
+    .aboutMe{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 }
 @media (max-width: 500px) {
     .pageTittle{
@@ -433,6 +444,10 @@ html, body {
     }
     #aboutMeText > h3{
         text-align: center;
+    }
+    .aboutMe{
+        margin-right: 0rem;
+        margin-left: 0rem;
     }
 }
 
