@@ -56,7 +56,7 @@ html, body {
     min-height: 100vh;
     background-color: #FBF9FA;
     position: relative;
-    box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);
+    /*box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);*/
 }
 #homePage{
     position: absolute;
@@ -313,9 +313,11 @@ html, body {
 .aboutMe{
     background-color: #FBF9FA;
     position: relative;
-    box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);
-    padding-bottom: 3.5rem;
+    /*box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);*/
+    padding-bottom: 3rem;
     padding-top: 3rem;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
 }
 #pageTittle{
     display: inline-block;
@@ -354,16 +356,27 @@ html, body {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     color: #3E3636;
 }
+.pageTittle{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #3E3636;
+}
+#aboutMePage > h1{
+    display: none;
+}
 #aboutMeText > h3{
-    margin-bottom: -1.5rem;
     opacity: 80;
     color: RGBA(62,54,54,0.33);
     text-shadow:none;
-}
-#aboutMeText > h1{
-    font-size: 3rem;
-    margin-bottom: -4px;
-    font-weight: 400;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: -0.5rem;
 }
 #aboutMeText > p{
     font-size: 1.1rem;
@@ -397,25 +410,29 @@ html, body {
         margin: 0 auto;
         margin-bottom: 3rem;
     }
-    #aboutMeText > h1{
-        font-size: clamp(2.5rem, 8vw, 3rem);
+    .pageTittle{
+        font-size: 9vw;
+        text-align: center;  
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.22);
+        margin-bottom: 1rem;
     }
     #pageTittle{
         font-size: clamp(2.5rem, 8vw, 3rem);
     }
+    #aboutMeText > h1{
+        display: none;
+    }
+    #aboutMePage > h1{
+        display: block;
+    }
 }
 @media (max-width: 500px) {
-    #aboutMeText > h1{
-        font-size: clamp(2.9rem, 15vw, 4rem);
+    .pageTittle{
+        font-size: 12vw;
         text-align: center;
     }
     #aboutMeText > h3{
         text-align: center;
-    }
-}
-@media (max-width: 325px) {
-    #aboutMeText > h1{
-        font-size: 14vw;
     }
 }
 
@@ -426,4 +443,10 @@ html, body {
 }
 #projectsPage{
     padding-bottom: 1px;
+}
+#projects > div > h1{
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.22);
+    margin-bottom: 0rem;
+    padding: 2.5rem 1rem;
 }
