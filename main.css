@@ -6,16 +6,12 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: #FBF9FA;
 }
 
 #tabsBar{
     text-align: center;
     padding: 15px 0px;
     width: 100%;
-    background-color: #F8F6F6;
-    -webkit-box-shadow: 5px -11px 30px 0px rgba(0,0,0,0.25); 
-    box-shadow: 5px -11px 30px 0px rgba(0,0,0,0.25);
     z-index: 10;
     position: absolute;
 }
@@ -29,8 +25,6 @@ html, body {
     cursor: pointer;
     transition: 200ms ease;
     font-weight: 400;
-
-    background-image: radial-gradient(circle, rgba(253,0,84,1) 0%, rgba(168,0,56,1) 100%);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -50,9 +44,7 @@ html, body {
 
 .home{
     min-height: 100vh;
-    background-color: #FBF9FA;
     position: relative;
-    /*box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);*/
 }
 #homePage{
     position: absolute;
@@ -61,29 +53,20 @@ html, body {
     transform: translate(-50%, -50%);
     padding: 0rem 2rem;
     z-index: 9;
-
 }
 #salutation{
     margin: 0 auto;
     font-size: 1.33rem;
     font-weight: 400;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    color: #3E3636;
 }
 #myName{
     margin: 0 auto;
     font-size: 5rem;
     font-weight: 400;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    color: #3E3636;
-
     white-space: nowrap;
 }
 #middleName, #pageTittle{
     font-weight: bold;
-    background-color:  rgb(253,0,84);
-  
-    background: linear-gradient(90deg, rgba(253,0,84,1) 0%, rgba(215,35,35,1) 100%);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -96,25 +79,13 @@ html, body {
     max-width: 52rem;
     margin-top: 0.5rem;
     font-weight: 400;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    color: #3E3636;
 }
 #technologiesLearning{
     margin-top: -0.5rem;
 }
 #technologiesLearning > button{
-    color: #FBF9FA;
-    background: rgb(253,0,84);
-    background: linear-gradient(90deg, rgba(253,0,84,1) 0%, rgba(215,35,35,1) 100%);
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-#homeImage{
-    
-}
-#homeImage > img{
-
 }
 
 @media (max-width: 1270px) {
@@ -174,9 +145,6 @@ html, body {
     margin: 0 auto;
     padding-bottom: 1em;
     border-radius: 1em;
-    -webkit-box-shadow: 0px 5px 33px -2px rgba(0,0,0,0.1); 
-    box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.1);
-    background-color: white;
     max-width: 990px;
     margin-bottom: 2.8rem;
 }
@@ -197,10 +165,8 @@ html, body {
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     pointer-events: none;
     display: none;
-    text-shadow: 1px 3px 13px rgba(0,0,0,0.87);
     font-size: 1.33em;
     text-align: center;
 }
@@ -219,8 +185,6 @@ html, body {
 .projectTitle{
     margin-top: 10pt;
     font-size: 20pt;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    color: #3E3636;
 }
 
 .projectDescription{
@@ -229,8 +193,6 @@ html, body {
     font-size: 13pt;
     margin-bottom: -1pt;
     padding-bottom: 8pt;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    color: #3E3636;
 }
 
 .projectTechnologies{
@@ -253,10 +215,6 @@ html, body {
     margin-right: 3pt;
     margin-top: 5pt;
     cursor: pointer;
-
-    color: #FBF9FA;
-    background: rgb(253,0,84);
-    background: linear-gradient(90deg, rgba(253,0,84,1) 0%, rgba(215,35,35,1) 100%);
     background-size: 100%;
     background-repeat: no-repeat;
     cursor: auto;
@@ -270,22 +228,17 @@ html, body {
 
 
 .aboutMe{
-    background-color: #F9F7F8;
     position: relative;
-    /*box-shadow: inset 4px -25px 32px -14px rgba(0,0,0,0.08);*/
     padding-bottom: 3rem;
     padding-top: 3rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    -webkit-box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.13); 
-    box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.13);
 }
 #pageTittle{
     display: inline-block;
     text-align: center;
     width: 100%;
     font-size: 3rem;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.22);
     margin-top: 3rem;
     font-weight: 400;
 }
@@ -304,18 +257,12 @@ html, body {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 8px solid #FBF9FA;
-    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15); 
-    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15);
 }
 
 #aboutMeText{
     max-width: 40rem;
     padding: 0rem 2rem;
-
     font-weight: 400;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    color: #3E3636;
 }
 .pageTittle{
     font-size: 3rem;
@@ -324,14 +271,12 @@ html, body {
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color: #3E3636;
 }
 #aboutMePage > h1{
     display: none;
 }
 #aboutMeText > h3{
     opacity: 80;
-    color: RGBA(62,54,54,0.33);
     text-shadow:none;
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -379,7 +324,6 @@ html, body {
     }
     .pageTittle{
         text-align: center;  
-        text-shadow: 2px 2px 6px rgba(0,0,0,0.22);
         margin-bottom: 1rem;
     }
     #pageTittle{
@@ -412,7 +356,6 @@ html, body {
 
 
 #projects{
-    background-color: #FBF9FA;
     min-height: 100vh;
 }
 #projectsPage{
@@ -420,7 +363,6 @@ html, body {
 }
 #projects > div > h1{
     text-align: center;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.22);
     margin-bottom: 0rem;
     padding: 2.5rem 1rem;
 }
