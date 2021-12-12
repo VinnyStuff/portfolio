@@ -369,3 +369,25 @@ html, body {
 #changeCssFile{
     float: right;
 }
+
+
+
+#socialMedias{
+    width: 100%;
+    text-align: center;
+}
+#socialMedias > div{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+#socialMedias > div > div{
+    padding: 0rem 0.8rem;
+    width: 24px;
+    height: 24px;
+}
+#socialMedias > div > div > svg{
+    width: 100%;
+    height: 100%;
+    fill: grey;
+}
