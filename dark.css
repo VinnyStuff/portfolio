@@ -46,3 +46,13 @@ html, body {
 #aboutMeText > h3{
     color: grey;
 }
+
+#socialMedias > div > div > svg{
+    fill: grey;
+}
+
+#socialMedias{
+    background-color: #232323;
+    -webkit-box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.28); 
+    box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.28);
+}
