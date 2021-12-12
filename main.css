@@ -66,7 +66,7 @@ html, body {
     white-space: nowrap;
 }
 #middleName, #pageTittle{
-    font-weight: bold;
+    font-weight: bold;  
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
