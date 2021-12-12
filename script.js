@@ -1,6 +1,7 @@
 window.onload = function() {
     projectsOpen();
     changeCurrentStyleMode();
+    applyStyleMode();
 }
 
 function projectsOpen(){
@@ -26,5 +27,16 @@ function changeCurrentStyleMode(){
             document.getElementById("theme").setAttribute('href', "light.css");
             button.innerText = "DARK MODE";
         }
+    }
+}
+
+function applyStyleMode(){
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.getElementById("theme").setAttribute('href', "dark.css");
+        button.innerText = "LIGHT MODE";
+    }
+    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
+        document.getElementById("theme").setAttribute('href', "light.css");
+        button.innerText = "DARK MODE";
     }
 }
