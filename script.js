@@ -13,3 +13,7 @@ function projectsOpen(){
         window.open("https://vinnystuff.github.io/athletics-calculator/");
     }
 }
+
+function changeCurrentStyleMode(){
+    
+}
