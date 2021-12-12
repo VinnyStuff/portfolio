@@ -1,5 +1,6 @@
 window.onload = function() {
     projectsOpen();
+    changeCurrentStyleMode();
 }
 
 function projectsOpen(){
@@ -15,5 +16,15 @@ function projectsOpen(){
 }
 
 function changeCurrentStyleMode(){
-    
+    const button = document.getElementById("changeCssFile");
+    button.onclick = function (){
+        if(button.innerText == "DARK MODE"){
+            document.getElementById("theme").setAttribute('href', "dark.css");
+            button.innerText = "LIGHT MODE";
+        }
+        else if(button.innerText == "LIGHT MODE"){
+            document.getElementById("theme").setAttribute('href', "light.css");
+            button.innerText = "DARK MODE";
+        }
+    }
 }
