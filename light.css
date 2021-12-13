@@ -44,10 +44,10 @@ html, body {
     -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15); 
     box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15);
 }
-#aboutMeText > h3{
+#aboutMeText > div > h3{
     color: #9B9697;
 }
 
-#socialMedias > div > div > svg{
+#socialMedias > div > svg{
     fill: #9B9697;
 }

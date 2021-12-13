@@ -43,16 +43,14 @@ html, body {
     -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15); 
     box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.15);
 }
-#aboutMeText > h3{
+#aboutMeText > div > h3{
     color: grey;
 }
 
-#socialMedias > div > div > svg{
+#socialMedias > div > svg{
     fill: grey;
 }
 
 #socialMedias{
     background-color: #232323;
-    -webkit-box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.28); 
-    box-shadow: inset 0px 0px 36px 1px rgba(0,0,0,0.28);
 }

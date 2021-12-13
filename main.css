@@ -275,13 +275,12 @@ html, body {
 #aboutMePage > h1{
     display: none;
 }
-#aboutMeText > h3{
+#aboutMeText > div > h3{
     text-shadow:none;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin-bottom: -0.5rem;
 }
 #aboutMeText > p{
     font-size: 1.1rem;
@@ -344,9 +343,6 @@ html, body {
         font-size: 12vw;
         text-align: center;
     }
-    #aboutMeText > h3{
-        text-align: center;
-    }
     .aboutMe{
         margin-right: 0rem;
         margin-left: 0rem;
@@ -373,20 +369,28 @@ html, body {
 
 
 #socialMedias{
-    width: 100%;
-    text-align: center;
-}
-#socialMedias > div{
     display: flex;
-    justify-content: center;
-    padding: 2rem 0rem;
+    float: right;
 }
-#socialMedias > div > div{
+#socialMedias  > div{
     padding: 0rem 0.8rem;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
 }
-#socialMedias > div > div > svg{
+#playstore{
+    margin-right: -0.8rem;
+}
+#socialMedias  > div > svg{
     width: 100%;
     height: 100%;
+}
+
+#aboutDescription > h3{
+    display: inline;
+}
+
+#aboutDescription{
+    margin-bottom: -0.45rem;
+    margin-top: 0.1rem;
 }
