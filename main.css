@@ -95,41 +95,28 @@ html, body {
         transform: translate(-50%, -50%);
     }
     #myName{
-        font-size: clamp(3rem, 8vw, 5rem);
+        font-size: clamp(3.25rem, 8vw, 5rem);
     }
     #fastIntroduction{
-        width: 95%;
+        width: 99%;
+        text-align: justify;
     }
 
 }
 @media (max-width: 600px) {
-    #homePage{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-    }
-    #fastIntroduction{
-        width: 100%;
-        text-align: justify;
-    }
     #myName{
-        font-size: 5rem;
+        font-size: 17vw;
         white-space: normal;
         text-align: center;
     }
     #salutation{
-        text-align: center;
+        text-align: left;
     }
     #tabsBar{
         display: none;
     }
 }
 @media (max-width: 480px) {
-    #salutation{
-        text-align: left;
-    }
     #myName{
         font-size: clamp(3rem, 16vw, 5rem);
     }
