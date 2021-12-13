@@ -29,15 +29,19 @@ function openSocialMedias(){
 }
 
 function changeCurrentStyleMode(){
-    const button = document.getElementById("changeCssFile");
-    button.onclick = function (){
-        if(button.innerText == "DARK MODE"){
-            document.getElementById("theme").setAttribute('href', "dark.css");
-            button.innerText = "LIGHT MODE";
-        }
-        else if(button.innerText == "LIGHT MODE"){
+    const sun = document.getElementById("sun");
+    const moon = document.getElementById("moon");
+    document.getElementById("changeTheme").onclick = function(){
+        console.log("click");
+        if(moon.style.display == "none"){
+            document.getElementById("moon").style.display = "block";
             document.getElementById("theme").setAttribute('href', "light.css");
-            button.innerText = "DARK MODE";
+            document.getElementById("sun").style.display = "none";
+        }
+        else if (sun.style.display == "none"){
+            document.getElementById("sun").style.display = "block";
+            document.getElementById("theme").setAttribute('href', "dark.css");
+            document.getElementById("moon").style.display = "none";
         }
     }
 }
@@ -46,10 +50,10 @@ function applyStyleMode(){
     const button = document.getElementById("changeCssFile");
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.getElementById("theme").setAttribute('href', "dark.css");
-        button.innerText = "LIGHT MODE";
+        document.getElementById("moon").style.display = "none";
     }
     else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
         document.getElementById("theme").setAttribute('href', "light.css");
-        button.innerText = "DARK MODE";
+        document.getElementById("sun").style.display = "none";
     }
 }

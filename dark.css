@@ -15,7 +15,7 @@ html, body {
 
 #middleName, #pageTittle, .categories{
     background-color:  rgb(253,0,84);
-    background: linear-gradient(90deg, rgba(253,0,84,1) 0%, rgba(255,81,81,1) 100%);
+    background:  linear-gradient(90deg, rgba(253,0,84,1) 0%, rgba(253,0,47,1) 100%);
 }
 
 .project{
@@ -50,7 +50,6 @@ html, body {
 #socialMedias > div > svg{
     fill: grey;
 }
-
-#socialMedias{
-    background-color: #232323;
+#changeTheme > div > svg{
+    fill: grey;
 }
