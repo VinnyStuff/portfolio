@@ -2,6 +2,7 @@ window.onload = function() {
     projectsOpen();
     changeCurrentStyleMode();
     applyStyleMode();
+    openSocialMedias();
 }
 
 function projectsOpen(){
@@ -13,6 +14,17 @@ function projectsOpen(){
     }
     document.getElementById("athleticsCalculator").onclick = function(){
         window.open("https://vinnystuff.github.io/athletics-calculator/");
+    }
+}
+function openSocialMedias(){
+    document.getElementById("github").onclick = function(){
+        window.open("https://github.com/VinnyStuff");
+    }
+    document.getElementById("linkedin").onclick = function(){
+        window.open("https://www.linkedin.com/");
+    }
+    document.getElementById("playstore").onclick = function(){
+        window.open("https://play.google.com/store/apps/developer?id=VinnyStuff");
     }
 }
 
@@ -31,6 +43,7 @@ function changeCurrentStyleMode(){
 }
 
 function applyStyleMode(){
+    const button = document.getElementById("changeCssFile");
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.getElementById("theme").setAttribute('href', "dark.css");
         button.innerText = "LIGHT MODE";
