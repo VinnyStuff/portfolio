@@ -22,7 +22,6 @@ html, body {
     display: inline;
     font-size: 1.1rem;
     padding: 0px 1.5rem;
-    cursor: pointer;
     transition: 200ms ease;
     font-weight: 400;
     background-size: 100%;
@@ -32,7 +31,8 @@ html, body {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-#tabsBar > button:hover{
+#tabsBar > button:hover:not(:first-child){
+    cursor: pointer;
     transform: scale(1.15);
 }
 #tabsBar > button:active{

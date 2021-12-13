@@ -1,8 +1,10 @@
 window.onload = function() {
     projectsOpen();
     changeCurrentStyleMode();
-    applyStyleMode();
+    applyStyleModeWhenPageIsOpen();
     openSocialMedias();
+    changeMeImage();
+    buttonScroller();
 }
 
 function projectsOpen(){
@@ -46,7 +48,7 @@ function changeCurrentStyleMode(){
     }
 }
 
-function applyStyleMode(){
+function applyStyleModeWhenPageIsOpen(){
     const button = document.getElementById("changeCssFile");
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.getElementById("theme").setAttribute('href', "dark.css");
@@ -56,4 +58,30 @@ function applyStyleMode(){
         document.getElementById("theme").setAttribute('href', "light.css");
         document.getElementById("sun").style.display = "none";
     }
+}
+
+function changeMeImage(){
+    const image = document.getElementById("aboutMeImage").getElementsByTagName("img")[0];
+    image.onmouseover = function (){
+        image.src = "me2.png";
+    }
+    image.onmouseout = function(){
+        image.src = "me.png";
+    }
+}
+
+function buttonScroller(){
+    const buttons = document.getElementById("tabsBar");
+    const home = tabsBar.getElementsByTagName("button")[0];
+    const aboutMe = tabsBar.getElementsByTagName("button")[1];
+    const myProjects = tabsBar.getElementsByTagName("button")[2];
+    home.addEventListener('click', function () {
+        
+    });
+    aboutMe.addEventListener('click', function () {
+        document.getElementsByClassName("aboutMe")[0].scrollIntoView({behavior: "smooth", block: "center"});
+    });
+    myProjects.addEventListener('click', function () {
+        document.getElementById("projects").scrollIntoView({behavior: "smooth"});
+    });
 }
