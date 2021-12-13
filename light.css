@@ -55,3 +55,6 @@ html, body {
 #changeTheme > div > svg{
     fill: #9B9697;
 }
+#changeTheme > div:hover > svg{
+    fill: #3E3636;
+}
