@@ -90,8 +90,7 @@ html, body {
 
 @media (max-width: 1270px) {
     #homePage{
-        position: absolute;
-        top: 75%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -133,6 +132,11 @@ html, body {
     }
     #myName{
         font-size: clamp(3rem, 16vw, 5rem);
+    }
+}
+@media (max-height: 380px) {
+    #tabsBar{
+        display: none;
     }
 }
 
