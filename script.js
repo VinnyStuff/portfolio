@@ -23,7 +23,7 @@ function openSocialMedias(){
         window.open("https://github.com/VinnyStuff");
     }
     document.getElementById("linkedin").onclick = function(){
-        window.open("https://www.linkedin.com/");
+        window.open("https://www.linkedin.com/in/vinnycios-medeiros-20321422b");
     }
     document.getElementById("playstore").onclick = function(){
         window.open("https://play.google.com/store/apps/developer?id=VinnyStuff");
