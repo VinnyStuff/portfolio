@@ -3,7 +3,6 @@ window.onload = function() {
     changeCurrentStyleMode();
     applyStyleModeWhenPageIsOpen();
     openSocialMedias();
-    changeMeImage();
     buttonScroller();
 }
 
@@ -60,24 +59,11 @@ function applyStyleModeWhenPageIsOpen(){
     }
 }
 
-function changeMeImage(){
-    const image = document.getElementById("aboutMeImage").getElementsByTagName("img")[0];
-    image.onmouseover = function (){
-        image.src = "me2.png";
-    }
-    image.onmouseout = function(){
-        image.src = "me.png";
-    }
-}
-
 function buttonScroller(){
     const buttons = document.getElementById("tabsBar");
     const home = tabsBar.getElementsByTagName("button")[0];
     const aboutMe = tabsBar.getElementsByTagName("button")[1];
     const myProjects = tabsBar.getElementsByTagName("button")[2];
-    home.addEventListener('click', function () {
-        
-    });
     aboutMe.addEventListener('click', function () {
         document.getElementsByClassName("aboutMe")[0].scrollIntoView({behavior: "smooth", block: "center"});
     });
