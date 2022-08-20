@@ -345,13 +345,18 @@ html, body {
     }
 }
 @media (max-width: 500px) {
-    .pageTittle{
-        font-size: 12vw;
-        text-align: center;
-    }
     .aboutMe{
         margin-right: 0rem;
         margin-left: 0rem;
+    }
+    #aboutMeImage{
+        height: 80vw;
+        width: 80vw;
+        padding: 0;
+    }
+    #aboutMeImage > img{
+        margin-left: -8px;
+        margin-top: -8px;
     }
 }
 
