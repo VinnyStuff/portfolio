@@ -73,7 +73,6 @@ html, body {
     top: 50%;
     left: 35%;
     transform: translate(-50%, -50%);
-    padding: 0rem 2rem;
     z-index: 9;
 }
 #salutation{
@@ -138,7 +137,10 @@ html, body {
         transform: translate(-50%, -50%);
     }
     #homePage{
-        left: 33%;
+        left: 35%;
+    }
+    #myName{
+        font-size: 5.4vw;
     }
 }
 @media (max-width: 1280px) {
