@@ -120,7 +120,7 @@ html, body {
     left: 38%;
     transform: translate(50%, -50%);
 
-    width: 600px;
+    max-width: 600px;
 }
 
 #homeImage > img{
@@ -131,14 +131,14 @@ html, body {
 
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
     #homeImage{
-        left: 77.5%;
+        left: 76.5%;
         transform: translate(-50%, -50%);
         width: 40vw;
     }
     #homePage{
-        left: 35%;
+        left: 33%;
     }
     #myName{
         font-size: clamp(4.2rem , 5.4vw, 5rem);
