@@ -110,11 +110,38 @@ html, body {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 1280px) {
-    #homePage{
-        top: 50%;
-        left: 50%;
+
+
+
+#homeImage{
+    position: absolute;
+    top: 48.5%;
+    left: 38%;
+    transform: translate(50%, -50%);
+
+    width: 600px;
+}
+
+#homeImage > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 1500px) {
+    #homeImage{
+        left: 77%;
         transform: translate(-50%, -50%);
+    }
+    #homePage{
+        left: 31.5%;
+    }
+}
+@media (max-width: 1400px) {
+    #homePage{
+        left: 50%;
     }
     #myName{
         font-size: clamp(3.25rem, 8vw, 5rem);
@@ -126,7 +153,6 @@ html, body {
     #homeImage{
         display: none;
     }
-
 }
 @media (max-width: 600px) {
     #myName{
@@ -440,16 +466,3 @@ html, body {
 
 
 
-#homeImage{
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(50%, -50%);
-
-    max-width: 600px;
-}
-
-#homeImage > img{
-    height: 100%;
-    width: 100%;
-}
