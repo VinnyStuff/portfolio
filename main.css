@@ -116,7 +116,7 @@ html, body {
 
 #homeImage{
     position: absolute;
-    top: 49.3%;
+    top: 48%;
     left: 38%;
     transform: translate(50%, -50%);
 
@@ -127,7 +127,6 @@ html, body {
     height: 100%;
     width: 100%;
 }
-
 
 
 
@@ -145,6 +144,11 @@ html, body {
     }
     #fastIntroduction{
         width: 53.8vw;
+    }
+}
+@media (max-height: 700px) {
+    #homeImage{
+        top: 47%;
     }
 }
 @media (max-width: 1279px) {
@@ -166,12 +170,6 @@ html, body {
     }
     #fastIntroduction{
         width: auto;
-    }
-}
-@media (max-width: 900px){
-    #myName{
-       /* margin-top: 0px;
-        margin-bottom: 0px;*/
     }
 }
 @media (max-width: 600px) {
@@ -198,6 +196,12 @@ html, body {
 @media (max-height: 380px) {
     #tabsBar{
         display: none;
+    }
+    #homeImage{
+        display: none;
+    }
+    #homePage{
+        left: 51%;
     }
 }
 
