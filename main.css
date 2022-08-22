@@ -116,7 +116,7 @@ html, body {
 
 #homeImage{
     position: absolute;
-    top: 48.5%;
+    top: 49.3%;
     left: 38%;
     transform: translate(50%, -50%);
 
@@ -133,22 +133,26 @@ html, body {
 
 @media (max-width: 1500px) {
     #homeImage{
-        left: 77%;
+        left: 77.5%;
         transform: translate(-50%, -50%);
+        width: 40vw;
     }
     #homePage{
         left: 35%;
     }
     #myName{
-        font-size: 5.4vw;
+        font-size: clamp(4.2rem , 5.4vw, 5rem);
+    }
+    #fastIntroduction{
+        width: 53.8vw;
     }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     #homePage{
-        left: 50%;
+        left: 51%;
     }
     #myName{
-        font-size: clamp(3.25rem, 8vw, 5rem);
+        font-size: clamp(3.3rem, 8.8vw, 5rem);
     }
     #fastIntroduction{
         width: 99%;
@@ -156,6 +160,18 @@ html, body {
     }
     #homeImage{
         display: none;
+    }
+    #fastIntroduction{
+        width: auto;
+    }
+    #fastIntroduction{
+        width: auto;
+    }
+}
+@media (max-width: 900px){
+    #myName{
+       /* margin-top: 0px;
+        margin-bottom: 0px;*/
     }
 }
 @media (max-width: 600px) {
