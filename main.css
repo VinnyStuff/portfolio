@@ -123,6 +123,9 @@ html, body {
         width: 99%;
         text-align: justify;
     }
+    #homeImage{
+        display: none;
+    }
 
 }
 @media (max-width: 600px) {
@@ -437,9 +440,16 @@ html, body {
 
 
 
-#illustration{
+#homeImage{
     position: absolute;
     top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
+    left: 35%;
+    transform: translate(50%, -50%);
+
+    max-width: 600px;
+}
+
+#homeImage > img{
+    height: 100%;
+    width: 100%;
 }
