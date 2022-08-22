@@ -136,10 +136,10 @@ html, body {
         transform: translate(-50%, -50%);
     }
     #homePage{
-        left: 31.5%;
+        left: 33%;
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1420px) {
     #homePage{
         left: 50%;
     }
