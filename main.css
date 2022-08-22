@@ -86,6 +86,8 @@ html, body {
     font-size: 5rem;
     font-weight: 400;
     white-space: nowrap;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 #middleName, #pageTittle{
     font-weight: bold;  
@@ -139,7 +141,7 @@ html, body {
         left: 33%;
     }
 }
-@media (max-width: 1420px) {
+@media (max-width: 1280px) {
     #homePage{
         left: 50%;
     }
