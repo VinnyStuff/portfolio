@@ -51,6 +51,9 @@ html, body {
 #socialMedias > div > svg{
     fill: #9B9697;
 }
+#socialMedias > div:hover > svg{
+    fill: #3E3636;
+}
 
 #changeTheme > div > svg{
     fill: #9B9697;

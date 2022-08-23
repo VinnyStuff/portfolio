@@ -50,6 +50,9 @@ html, body {
 #socialMedias > div > svg{
     fill: grey;
 }
+#socialMedias > div:hover > svg{
+    fill: #F8F8F8;
+}
 #changeTheme > div > svg{
     fill: grey;
 }
