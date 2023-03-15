@@ -476,7 +476,6 @@ html, body {
     align-items: center;
     padding: 7px 10px;
     width: max-content;
-    margin-right: 6px;
 }
 
 .openIn > p{
@@ -489,6 +488,10 @@ html, body {
     padding: 0px 18px;
     display: flex;
     height: max-content;
+}
+.openInLaunch{
+    margin-right: 6px;
+
 }
 
 .OpenProject{
@@ -509,8 +512,17 @@ html, body {
         justify-content: center;
     }
 }
+@media (max-width: 450px) {
+    .OpenProject{
+        justify-content: left;
+    }
+}
+
 @media (max-width: 357px) {
     .openInGithub > p{
         width: 60px;
+    }
+    .OpenProject{
+        justify-content: center;
     }
 }
