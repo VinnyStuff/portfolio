@@ -59,3 +59,11 @@ html, body {
 #changeTheme > div:hover > svg{
     fill: #F8F8F8;
 }
+
+.launchOpenIn{
+    stroke: white;
+}
+
+.githubOpenIn{
+    fill: white;
+}

@@ -61,3 +61,32 @@ html, body {
 #changeTheme > div:hover > svg{
     fill: #3E3636;
 }
+
+
+.openIn{
+    color: white;
+}
+
+.launchOpenIn{
+    stroke: white;
+}
+
+.githubOpenIn{
+    fill: white;
+}
+
+.openInLaunch{
+    background: linear-gradient(90deg, rgba(253,0,84,1) 0%, rgba(215,35,35,1) 100%);
+}
+
+.openInLaunch:hover{
+    background: linear-gradient(90deg, rgba(253,0,84,0.5) 0%, rgba(215,35,35,0.5) 100%);
+}
+
+.openInGithub{
+    background-color: #252A2D;
+}
+
+.openInGithub:hover{
+    background-color: #69777f;
+}

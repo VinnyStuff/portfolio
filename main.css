@@ -229,20 +229,7 @@ html, body {
     max-width: 990px;
     max-height: 540px;
 }
-.clickToOpenTheProject{
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    display: none;
-    font-size: 1.33em;
-    text-align: center;
-}
-.projectImage:hover .images{
-    filter: brightness(50%);
-}
-.projectImage:hover .clickToOpenTheProject{
+.projectImage:hover{
     display: block;
 }
 
@@ -254,6 +241,7 @@ html, body {
 .projectTitle{
     margin-top: 10pt;
     font-size: 20pt;
+    width: max-content;
 }
 
 .projectDescription{
@@ -262,13 +250,6 @@ html, body {
     font-size: 13pt;
     margin-bottom: -1pt;
     padding-bottom: 8pt;
-}
-
-.projectTechnologies{
-    padding-left: 16pt;
-    margin-top: -2pt;
-    margin-right: 13pt;
-    display: inline-block;
 }
 
 
@@ -282,19 +263,11 @@ html, body {
     border-radius: 6pt;
     transition: .2s ease;
     margin-right: 3pt;
-    margin-top: 5pt;
     cursor: pointer;
     background-size: 100%;
     background-repeat: no-repeat;
     cursor: auto;
 }
-
-.categories:hover{
-    transform: scale(1.1);
-    -webkit-transfoorm: scale(1.1);
-    -ms-transform: scale(1.1);
-}
-
 
 .aboutMe{
     position: relative;
@@ -489,4 +462,55 @@ html, body {
 
 
 
+.openIn:hover{
+    cursor: pointer;
+}
 
+.projectTitle:hover{
+    cursor: pointer;
+}
+
+.openIn{
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    padding: 7px 10px;
+    width: max-content;
+    margin-right: 6px;
+}
+
+.openIn > p{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.projectTechnologies{
+    padding-top: 5px;
+    padding: 0px 18px;
+    display: flex;
+    height: max-content;
+}
+
+.OpenProject{
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 6px;
+}
+
+.categories{
+    margin-bottom: 6px;
+}
+
+@media (max-width: 610px) {
+    .projectTechnologies{
+        display: block;
+    }
+    .OpenProject{
+        justify-content: center;
+    }
+}
+@media (max-width: 357px) {
+    .openInGithub > p{
+        width: 60px;
+    }
+}

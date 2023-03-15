@@ -1,20 +1,50 @@
 window.onload = function() {
-    projectsOpen();
+    projectsLaunch();
+    openProjectCode();
     changeCurrentStyleMode();
     applyStyleModeWhenPageIsOpen();
     openSocialMedias();
-    buttonScroller();
+    buttonScroller();   
 }
 
-function projectsOpen(){
-    document.getElementById("asteroidSpace").onclick = function(){
-        window.open("https://play.google.com/store/apps/details?id=com.VinnyStuff.AsteroidSpaceGooglePlay&utm_source=vinnystuff.com&utm_campaign=site&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1");
+function projectsLaunch(){
+    document.querySelectorAll('.vrikaQuizLaunch').forEach(vrikaQuiz => {
+        vrikaQuiz.addEventListener('click', () => {
+            window.open("https://vinnystuff.github.io/trivia-game/");
+        });
+    });    
+    
+    document.querySelectorAll('.asteroidSpaceLaunch').forEach(asteroidSpace => {
+        asteroidSpace.addEventListener('click', () => {
+            window.open("https://play.google.com/store/apps/details?id=com.VinnyStuff.AsteroidSpaceGooglePlay&utm_source=vinnystuff.com&utm_campaign=site&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1");
+        });
+    });    
+
+    document.querySelectorAll('.bmiLaunch').forEach(bmi => {
+        bmi.addEventListener('click', () => {
+            window.open("https://vinnystuff.github.io/BMI-BMR-Tracker/");
+        });
+    });    
+
+    document.querySelectorAll('.athleticsCalculatorLaunch').forEach(athleticsCalculator => {
+        athleticsCalculator.addEventListener('click', () => {
+            window.open("https://vinnystuff.github.io/athletics-calculator/");
+        });
+    }); 
+
+}
+function openProjectCode(){
+    document.getElementById("vrikaQuizGithub").onclick = function(){
+        window.open("https://github.com/VinnyStuff/trivia-game");
     }
-    document.getElementById("bmi").onclick = function(){
-        window.open("https://vinnystuff.github.io/BMI-BMR-Tracker/");
+    document.getElementById("asteroidSpaceGithub").onclick = function(){
+        window.open("https://github.com/VinnyStuff/Asteroid-Space");
     }
-    document.getElementById("athleticsCalculator").onclick = function(){
-        window.open("https://vinnystuff.github.io/athletics-calculator/");
+    document.getElementById("bmiGithub").onclick = function(){
+        window.open("https://github.com/VinnyStuff/BMI-BMR-Tracker");
+    }
+    document.getElementById("athleticsCalculatorGithub").onclick = function(){
+        window.open("https://github.com/VinnyStuff/athletics-calculator");
     }
 }
 function openSocialMedias(){
