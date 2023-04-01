@@ -526,3 +526,20 @@ html, body {
         justify-content: center;
     }
 }
+
+.warning{
+    height: 100%;
+    display: flex;
+    background-color: #FFFBE6;
+    color: #5C3C00;
+    border: 1px solid #FFF5C2;
+    border-radius: 8px;
+}
+.warning:hover{
+    cursor: default;
+}
+@media (max-width: 610px) {
+    .warning{
+        margin-bottom: 6px;
+    }
+}
