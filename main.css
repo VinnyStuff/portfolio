@@ -241,7 +241,6 @@ html, body {
 .projectTitle{
     margin-top: 10pt;
     font-size: 20pt;
-    width: max-content;
 }
 
 .projectDescription{
@@ -504,7 +503,7 @@ html, body {
     margin-bottom: 6px;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 655px) {
     .projectTechnologies{
         display: block;
     }

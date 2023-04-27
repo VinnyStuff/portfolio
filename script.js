@@ -37,6 +37,12 @@ function projectsLaunch(){
             window.open("https://vinnystuff.github.io/week-anime-project/");
         });
     }); 
+
+    document.querySelectorAll('.animeWeeklyLaunch').forEach(athleticsCalculator => {
+        athleticsCalculator.addEventListener('click', () => {
+            window.open("https://vinnystuff.github.io/anime-weekly/");
+        });
+    }); 
 }
 function openProjectCode(){
     document.getElementById("vrikaQuizGithub").onclick = function(){
@@ -53,6 +59,9 @@ function openProjectCode(){
     }
     document.getElementById("animeWeekProjectGithub").onclick = function(){
         window.open("https://github.com/VinnyStuff/week-anime-project");
+    }
+    document.getElementById("animeWeeklyGithub").onclick = function(){
+        window.open("https://github.com/VinnyStuff/anime-weekly/");
     }
 }
 function openSocialMedias(){
