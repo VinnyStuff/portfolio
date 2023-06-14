@@ -43,7 +43,17 @@ function projectsLaunch(){
             window.open("https://vinnystuff.github.io/anime-weekly/");
         });
     }); 
+    document.querySelectorAll('.pakmanChallenge').forEach(pakmanChallenge => {
+        pakmanChallenge.addEventListener('click', () => {
+            window.open("https://vinnystuff.github.io/pakman-challenge/novo-cliente");
+        });
+    }); 
 }
+
+
+
+
+
 function openProjectCode(){
     document.getElementById("vrikaQuizGithub").onclick = function(){
         window.open("https://github.com/VinnyStuff/trivia-game");
@@ -57,11 +67,11 @@ function openProjectCode(){
     document.getElementById("athleticsCalculatorGithub").onclick = function(){
         window.open("https://github.com/VinnyStuff/athletics-calculator");
     }
-    document.getElementById("animeWeekProjectGithub").onclick = function(){
-        window.open("https://github.com/VinnyStuff/week-anime-project");
-    }
     document.getElementById("animeWeeklyGithub").onclick = function(){
         window.open("https://github.com/VinnyStuff/anime-weekly/");
+    }
+    document.getElementById("pakmanChallengeGithub").onclick = function(){
+        window.open("https://github.com/VinnyStuff/pakman-challenge");
     }
 }
 function openSocialMedias(){
